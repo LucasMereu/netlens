@@ -1,0 +1,1114 @@
+{
+  "netdisco": {
+    "url": "http://192.168.10.51:5000",
+    "user": "admin",
+    "password": "NetLensSecurePass2026!",
+    "api_token": ""
+  },
+  "librenms": {
+    "url": "http://192.168.10.50:8000/",
+    "user": "rossi",
+    "password": "NetLensSecurePass2026!",
+    "api_token": "0123456789abcdef0123456789abcdef"
+  },
+  "zabbix": {
+    "url": "http://192.168.10.108",
+    "user": "Admin",
+    "password": "NetLensSecurePass2026!"
+  },
+  "netbox": {
+    "url": "https://192.168.10.235/",
+    "api_token": "0123456789abcdef0123456789abcdef01234567"
+  },
+  "settings": {
+    "verify_ssl": false,
+    "port": 5001
+  },
+  "databases": {
+    "netdisco": {
+      "database": "netdisco",
+      "host": "192.168.10.51",
+      "password": "pwd",
+      "port": 5432,
+      "type": "postgresql",
+      "user": "netdisco"
+    },
+    "librenms": {
+      "host": "192.168.10.50",
+      "port": 33066,
+      "database": "librenms",
+      "user": "librenms",
+      "password": "librenms",
+      "type": "mysql"
+    },
+    "zabbix": {
+      "host": "192.168.10.108",
+      "port": 5432,
+      "database": "zabbix",
+      "user": "zabbix",
+      "password": "zabbix",
+      "type": "postgresql"
+    }
+  },
+  "monitored_infrastructure": {
+    "switches": [
+      {
+        "ip": "10.11.0.251",
+        "name": "ILHAS-DELL-ETH",
+        "port": "TenGigabitEthernet 1/42",
+        "dest_device": "U7ProXGS",
+        "dest_port": "eth0"
+      },
+      {
+        "ip": "172.16.11.7",
+        "name": "TW54LNX0K0",
+        "port": "2",
+        "dest_device": "zimbra",
+        "dest_port": "eno1"
+      },
+      {
+        "ip": "172.16.11.24",
+        "name": "SW CRP1 Arte News",
+        "port": "GigabitEthernet1/0/48",
+        "dest_device": "SW CRP3_5.26_POE - Arte News",
+        "dest_port": "GigabitEthernet1/0/24"
+      },
+      {
+        "ip": "172.16.11.26",
+        "name": "SW CRP3_5.26_POE - Arte News",
+        "port": "GigabitEthernet1/0/24",
+        "dest_device": "SW CRP1 Arte News",
+        "dest_port": "GigabitEthernet1/0/48"
+      },
+      {
+        "ip": "172.16.11.33",
+        "name": "CORP_POe_ALMOX-GERAL",
+        "port": "5 Gigabit - Level",
+        "dest_device": "R310_Almox-G",
+        "dest_port": "eth0"
+      },
+      {
+        "ip": "172.16.11.41",
+        "name": "TW49LNX0XY",
+        "port": "48",
+        "dest_device": "SW CRP4_5.22_POE - Redacao",
+        "dest_port": "GigabitEthernet1/0/24"
+      },
+      {
+        "ip": "172.16.11.42",
+        "name": "SW CRP4_5.22_POE - Redacao",
+        "port": "GigabitEthernet1/0/24",
+        "dest_device": "TW49LNX0XY",
+        "dest_port": "48"
+      },
+      {
+        "ip": "172.16.11.50",
+        "name": "SWITCH PABX 1",
+        "port": "GigabitEthernet1/0/16",
+        "dest_device": "Base_REDES",
+        "dest_port": "eth0"
+      },
+      {
+        "ip": "172.16.11.52",
+        "name": "SW CRP1_5.3 - A01",
+        "port": "GigabitEthernet1/0/48",
+        "dest_device": "SW CRP2_5.4_POE - A01",
+        "dest_port": "GigabitEthernet1/0/24"
+      },
+      {
+        "ip": "172.16.11.53",
+        "name": "SW CRP2_5.4_POE - A01",
+        "port": "GigabitEthernet1/0/24",
+        "dest_device": "SW CRP1_5.3 - A01",
+        "dest_port": "GigabitEthernet1/0/48"
+      },
+      {
+        "ip": "172.16.11.54",
+        "name": "SW 11.54 - Monitor",
+        "port": "GigabitEthernet1/0/24",
+        "dest_device": "SW CRP1_5.9 - A12",
+        "dest_port": "48"
+      },
+      {
+        "ip": "172.16.11.73",
+        "name": "SW CRP1_5.9 - A12",
+        "port": "13",
+        "dest_device": "CORP_10_AMARELO_10.11.0.210",
+        "dest_port": "GigabitEthernet1/0/24 Interface"
+      },
+      {
+        "ip": "172.16.11.73",
+        "name": "SW CRP1_5.9 - A12",
+        "port": "19",
+        "dest_device": "corp_laranja_m02_ip10.11.0.201",
+        "dest_port": "GigabitEthernet1/0/24 Interface"
+      },
+      {
+        "ip": "172.16.11.73",
+        "name": "SW CRP1_5.9 - A12",
+        "port": "48",
+        "dest_device": "SW 11.54 - Monitor",
+        "dest_port": "GigabitEthernet1/0/24 Interface"
+      },
+      {
+        "ip": "172.16.11.74",
+        "name": "PROD01-LJ-M01-IP10.11.0.200",
+        "port": "24 Gigabit - Level",
+        "dest_device": "SW CRP1_5.9 - A12",
+        "dest_port": "17"
+      },
+      {
+        "ip": "172.16.11.75",
+        "name": "corp_laranja_m02_ip10.11.0.201",
+        "port": "GigabitEthernet1/0/24",
+        "dest_device": "SW CRP1_5.9 - A12",
+        "dest_port": "19"
+      },
+      {
+        "ip": "172.16.11.77",
+        "name": "CORP_10_AMARELO_10.11.0.210",
+        "port": "GigabitEthernet1/0/24",
+        "dest_device": "SW CRP1_5.9 - A12",
+        "dest_port": "13"
+      },
+      {
+        "ip": "172.16.11.80",
+        "name": "SW CRP1_5.10 - A13",
+        "port": "43",
+        "dest_device": "SW CRP2_5.11  A-13",
+        "dest_port": "GigabitEthernet1/0/48 Interface"
+      },
+      {
+        "ip": "172.16.11.80",
+        "name": "SW CRP1_5.10 - A13",
+        "port": "5",
+        "dest_device": "CORP_07_VERDE_M07_IP10.11.0.206",
+        "dest_port": "24"
+      },
+      {
+        "ip": "172.16.11.81",
+        "name": "SW CRP2_5.11  A-13",
+        "port": "GigabitEthernet1/0/48",
+        "dest_device": "SW CRP1_5.10 - A13",
+        "dest_port": "43"
+      },
+      {
+        "ip": "172.16.11.82",
+        "name": "CORP_07_VERDE_M07_IP10.11.0.206",
+        "port": "24 Gigabit - Level",
+        "dest_device": "SW CRP1_5.10 - A13",
+        "dest_port": "5"
+      },
+      {
+        "ip": "172.16.11.83",
+        "name": "CORP_08_VERDE_MESA_9",
+        "port": "GigabitEthernet1/0/23",
+        "dest_device": "SW CRP1_5.10 - A13",
+        "dest_port": "9"
+      },
+      {
+        "ip": "172.16.11.90",
+        "name": "A22_Aruba-2930F-48G-4SFPP",
+        "port": "43",
+        "dest_device": "HPE-1820 PoE 24G - PEANUTS- 11.94",
+        "dest_port": "24"
+      },
+      {
+        "ip": "172.16.11.90",
+        "name": "A22_Aruba-2930F-48G-4SFPP",
+        "port": "44",
+        "dest_device": "HPE-1820 PoE 24G - PEANUTS - 11.93",
+        "dest_port": "24"
+      },
+      {
+        "ip": "172.16.11.90",
+        "name": "A22_Aruba-2930F-48G-4SFPP",
+        "port": "45",
+        "dest_device": "SW CRP2_5.19 - A22",
+        "dest_port": "GigabitEthernet1/0/48 Interface"
+      },
+      {
+        "ip": "172.16.11.90",
+        "name": "A22_Aruba-2930F-48G-4SFPP",
+        "port": "46",
+        "dest_device": "HPE-1820 PoE 24G - A23 PRESIDENCIA- 11.95",
+        "dest_port": "24"
+      },
+      {
+        "ip": "172.16.11.90",
+        "name": "A22_Aruba-2930F-48G-4SFPP",
+        "port": "47",
+        "dest_device": "SW CRP3_5.20_POE - A22",
+        "dest_port": "GigabitEthernet1/0/24 Interface"
+      },
+      {
+        "ip": "172.16.11.90",
+        "name": "A22_Aruba-2930F-48G-4SFPP",
+        "port": "48",
+        "dest_device": "HPE-1820 PoE 24G - WEB SISTEMAS- 11.96",
+        "dest_port": "24"
+      },
+      {
+        "ip": "172.16.11.91",
+        "name": "SW CRP2_5.19 - A22",
+        "port": "GigabitEthernet1/0/48",
+        "dest_device": "A22_Aruba-2930F-48G-4SFPP",
+        "dest_port": "45"
+      },
+      {
+        "ip": "172.16.11.92",
+        "name": "SW CRP3_5.20_POE - A22",
+        "port": "GigabitEthernet1/0/22",
+        "dest_device": "R710_Diretoria_Neto_#A22",
+        "dest_port": "eth0"
+      },
+      {
+        "ip": "172.16.11.92",
+        "name": "SW CRP3_5.20_POE - A22",
+        "port": "GigabitEthernet1/0/24",
+        "dest_device": "A22_Aruba-2930F-48G-4SFPP",
+        "dest_port": "47"
+      },
+      {
+        "ip": "172.16.11.93",
+        "name": "HPE-1820 PoE 24G - PEANUTS - 11.93",
+        "port": "24 Gigabit - Level",
+        "dest_device": "A22_Aruba-2930F-48G-4SFPP",
+        "dest_port": "44"
+      },
+      {
+        "ip": "172.16.11.94",
+        "name": "HPE-1820 PoE 24G - PEANUTS- 11.94",
+        "port": "24 Gigabit - Level",
+        "dest_device": "A22_Aruba-2930F-48G-4SFPP",
+        "dest_port": "43"
+      },
+      {
+        "ip": "172.16.11.95",
+        "name": "HPE-1820 PoE 24G - A23 PRESIDENCIA- 11.95",
+        "port": "24 Gigabit - Level",
+        "dest_device": "A22_Aruba-2930F-48G-4SFPP",
+        "dest_port": "46"
+      },
+      {
+        "ip": "172.16.11.95",
+        "name": "HPE-1820 PoE 24G - A23 PRESIDENCIA- 11.95",
+        "port": "3 Gigabit - Level",
+        "dest_device": "R710_Presidencia_Amilcare_#SW-PRES",
+        "dest_port": "eth0"
+      },
+      {
+        "ip": "172.16.11.96",
+        "name": "HPE-1820 PoE 24G - WEB SISTEMAS- 11.96",
+        "port": "24 Gigabit - Level",
+        "dest_device": "A22_Aruba-2930F-48G-4SFPP",
+        "dest_port": "48"
+      },
+      {
+        "ip": "172.16.11.248",
+        "name": "DC-DELL-ETH",
+        "port": "Port-channel 53",
+        "dest_device": "DC-DELL-FIBRA",
+        "dest_port": "Port-channel 53"
+      },
+      {
+        "ip": "172.16.11.248",
+        "name": "DC-DELL-ETH",
+        "port": "TenGigabitEthernet 1/1",
+        "dest_device": "SW CRP2_5.23 - SL_CCaption",
+        "dest_port": "GigabitEthernet1/0/24"
+      },
+      {
+        "ip": "172.16.11.248",
+        "name": "DC-DELL-ETH",
+        "port": "TenGigabitEthernet 1/10",
+        "dest_device": "SW CVIRTUAL - 10.10.6.12",
+        "dest_port": "47"
+      },
+      {
+        "ip": "172.16.11.248",
+        "name": "DC-DELL-ETH",
+        "port": "TenGigabitEthernet 1/41",
+        "dest_device": "CVirtual2",
+        "dest_port": "GigabitEthernet1/0/24"
+      },
+      {
+        "ip": "172.16.11.248",
+        "name": "DC-DELL-ETH",
+        "port": "TenGigabitEthernet 1/42",
+        "dest_device": "UCG-Fiber",
+        "dest_port": "eth2"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "Port-channel 53",
+        "dest_device": "DC-DELL-ETH",
+        "dest_port": "Port-channel 53"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/1",
+        "dest_device": "SW CRP1_5.9 - A12",
+        "dest_port": "A1"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/10",
+        "dest_device": "SW CRP1_5.37 - Eletrica",
+        "dest_port": "GigabitEthernet1/0/25"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/11",
+        "dest_device": "A22_Aruba-2930F-48G-4SFPP",
+        "dest_port": "49"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/13",
+        "dest_device": "TW54LNX0K0",
+        "dest_port": "49"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/14",
+        "dest_device": "SWITCH PABX 1",
+        "dest_port": "GigabitEthernet1/0/25"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/17",
+        "dest_device": "CORP_POe_ALMOX-GERAL",
+        "dest_port": "Uplink SW Dell24917"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/19",
+        "dest_device": "SW CRP1_5.7 - A11",
+        "dest_port": "GigabitEthernet1/0/49"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/20",
+        "dest_device": "SW CRP1_5.31 - Portaria",
+        "dest_port": "GigabitEthernet1/0/28"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/21",
+        "dest_device": "SW CRP1 Arte News",
+        "dest_port": "GigabitEthernet1/0/50"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/27",
+        "dest_device": "SW-V1004-CAMERAS_CENARIO_V_DC",
+        "dest_port": "GigabitEthernet1/0/25"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/29",
+        "dest_device": "TW28KY50G2",
+        "dest_port": "1/27"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/3",
+        "dest_device": "TW49LNX0XY",
+        "dest_port": "49"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/30",
+        "dest_device": "HP_DC_02 172.16.11.2",
+        "dest_port": "A1"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/31",
+        "dest_device": "HP_DC_01",
+        "dest_port": "A1"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/32",
+        "dest_device": "TW54LNX0H8",
+        "dest_port": "49"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/39",
+        "dest_device": "TW54LNX0LS",
+        "dest_port": "49"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/41",
+        "dest_device": "Almoxarifado Tec - 172.16.11.55",
+        "dest_port": "A1"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/44",
+        "dest_device": "Aruba-2930F-48G-PoEP-4SFPP",
+        "dest_port": "49"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/5",
+        "dest_device": "SW CRP1_5.10 - A13",
+        "dest_port": "A1"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/6",
+        "dest_device": "Estudio G",
+        "dest_port": "GigabitEthernet1/0/26"
+      },
+      {
+        "ip": "172.16.11.249",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/8",
+        "dest_device": "SW CRP1_5.3 - A01",
+        "dest_port": "GigabitEthernet1/0/49"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/1",
+        "dest_device": "SW CRP1_5.9 - A12",
+        "dest_port": "A1"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/10",
+        "dest_device": "SW CRP1_5.37 - Eletrica",
+        "dest_port": "GigabitEthernet1/0/25"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/11",
+        "dest_device": "A22_Aruba-2930F-48G-4SFPP",
+        "dest_port": "49"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/13",
+        "dest_device": "TW54LNX0K0",
+        "dest_port": "49"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/14",
+        "dest_device": "SWITCH PABX 1",
+        "dest_port": "GigabitEthernet1/0/25"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/17",
+        "dest_device": "CORP_POe_ALMOX-GERAL",
+        "dest_port": "Uplink SW Dell24917"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/19",
+        "dest_device": "SW CRP1_5.7 - A11",
+        "dest_port": "GigabitEthernet1/0/49"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/20",
+        "dest_device": "SW CRP1_5.31 - Portaria",
+        "dest_port": "GigabitEthernet1/0/28"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/21",
+        "dest_device": "SW CRP1 Arte News",
+        "dest_port": "GigabitEthernet1/0/50"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/27",
+        "dest_device": "SW-V1004-CAMERAS_CENARIO_V_DC",
+        "dest_port": "GigabitEthernet1/0/25"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/29",
+        "dest_device": "TW28KY50G2",
+        "dest_port": "1/27"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/3",
+        "dest_device": "TW49LNX0XY",
+        "dest_port": "49"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/30",
+        "dest_device": "HP_DC_02 172.16.11.2",
+        "dest_port": "A1"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/31",
+        "dest_device": "HP_DC_01",
+        "dest_port": "A1"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/32",
+        "dest_device": "TW54LNX0H8",
+        "dest_port": "49"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/39",
+        "dest_device": "TW54LNX0LS",
+        "dest_port": "49"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/41",
+        "dest_device": "Almoxarifado Tec - 172.16.11.55",
+        "dest_port": "A1"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/44",
+        "dest_device": "Aruba-2930F-48G-PoEP-4SFPP",
+        "dest_port": "49"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/5",
+        "dest_device": "SW CRP1_5.10 - A13",
+        "dest_port": "A1"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/6",
+        "dest_device": "Estudio G",
+        "dest_port": "GigabitEthernet1/0/26"
+      },
+      {
+        "ip": "172.16.11.250",
+        "name": "DC-DELL-FIBRA",
+        "port": "TenGigabitEthernet 1/8",
+        "dest_device": "SW CRP1_5.3 - A01",
+        "dest_port": "GigabitEthernet1/0/49"
+      }
+    ],
+    "wifi_bases": [
+      {
+        "ip": "10.11.6.108",
+        "name": "Ruckus Almox",
+        "model": "R610",
+        "location": "Almoxarifado",
+        "source_switch": "corp_poe_almox-geral",
+        "source_port": "GigabitEthernet1/0/5"
+      },
+      {
+        "ip": "172.16.7.201",
+        "name": "r700_suporte_#a03",
+        "model": "R700",
+        "location": "Suporte Técnico",
+        "source_switch": "sw crp1_5.5",
+        "source_port": "Gi1/0/12"
+      },
+      {
+        "ip": "172.16.7.202",
+        "name": "r700_base_hall_estudios_#dc",
+        "model": "R700",
+        "location": "Hall de Estudos",
+        "source_switch": "DC-DELL-ETH",
+        "source_port": "Gi1/0/22"
+      },
+      {
+        "ip": "172.16.7.226",
+        "name": "r7055_almox_tecnico_#a03",
+        "model": "R7055",
+        "location": "Almoxarifado Técnico",
+        "source_switch": "sw crp2_5.6",
+        "source_port": "Gi1/0/8"
+      },
+      {
+        "ip": "172.16.7.237",
+        "name": "base_redes",
+        "model": "R700",
+        "location": "Sala de Redes",
+        "source_switch": "corp_poe_almox-geral",
+        "source_port": "Gi1/0/14"
+      }
+    ]
+  },
+  "dell_switches": [
+    {
+      "ip": "10.11.0.248",
+      "name": "DC-DELL-ETH (Core A)",
+      "role": "core"
+    },
+    {
+      "ip": "10.11.0.249",
+      "name": "DC-DELL-FIBRA (Core B)",
+      "role": "core"
+    },
+    {
+      "ip": "10.11.0.251",
+      "name": "ILHAS-DELL-ETH (Acesso)",
+      "role": "access"
+    }
+  ],
+  "ping_targets": {
+    "10.11.0.249": {
+      "name": "Dell Fibra Gerência (Mgmt)",
+      "group": "control_plane"
+    },
+    "10.1.1.1": {
+      "name": "Dell Fibra Point-to-Point (SVI)",
+      "group": "control_plane"
+    },
+    "10.1.1.2": {
+      "name": "Sophos Firewall (Data Plane)",
+      "group": "data_plane"
+    },
+    "10.11.0.248": {
+      "name": "Dell Fibra Ethernet Física (Mgmt Eth)",
+      "group": "data_plane"
+    }
+  },
+  "custom_profiles": {
+    "SERVER_WINDOWS": {
+      "name": "SERVER_WINDOWS",
+      "description": "Servidores Físicos Linux (Dell, HP, Lenovo)",
+      "netbox_role_slug": "servidores",
+      "netbox_object_type": "device",
+      "default_cluster": "",
+      "zabbix_groups": [
+        "01 - Windows Servers"
+      ],
+      "zabbix_templates": [
+        "01 - WINDOWS"
+      ],
+      "zabbix_interface_type": 2,
+      "zabbix_port": 161,
+      "snmp_version": "v2c",
+      "librenms_protocol": "snmp",
+      "librenms_version": "v2c",
+      "librenms_port": 161,
+      "netdisco_discovery_enabled": true,
+      "netdisco_protocols": [
+        "LLDP",
+        "CDP"
+      ]
+    }
+  },
+  "sites": [
+    {
+      "id": "redetv-hq",
+      "name": "RedeTV HQ",
+      "description": "Sede principal"
+    },
+    {
+      "name": "REDETV",
+      "description": "Matriz",
+      "id": "f065d940"
+    }
+  ],
+  "device_models": [
+    {
+      "id": "hpe-1930-jl685a",
+      "manufacturer": "HPE",
+      "model": "OfficeConnect 1930 JL685A",
+      "default_profile": "NETWORK_SWITCH"
+    }
+  ],
+  "servers": [
+    {
+      "id": "srv-netbox",
+      "name": "Netbox",
+      "type": "netbox",
+      "url": "https://192.168.10.235/",
+      "api_token": "0123456789abcdef0123456789abcdef01234567",
+      "description": "NetBox DCIM / IPAM",
+      "show_in_header": true,
+      "enabled": true
+    },
+    {
+      "id": "srv-netdisco",
+      "name": "Netdisco",
+      "type": "netdisco",
+      "url": "http://192.168.10.51:5000",
+      "user": "admin",
+      "password": "NetLensSecurePass2026!",
+      "api_token": "",
+      "description": "Netdisco Network Discovery",
+      "show_in_header": true,
+      "enabled": true
+    },
+    {
+      "id": "srv-librenms",
+      "name": "LibreNMS",
+      "type": "librenms",
+      "url": "http://192.168.10.50:8000/",
+      "user": "rossi",
+      "password": "NetLensSecurePass2026!",
+      "api_token": "0123456789abcdef0123456789abcdef",
+      "description": "LibreNMS SNMP Monitoring",
+      "show_in_header": true,
+      "enabled": true
+    },
+    {
+      "id": "srv-zabbix",
+      "name": "Zabbix",
+      "type": "zabbix",
+      "url": "http://192.168.10.108",
+      "user": "Admin",
+      "password": "NetLensSecurePass2026!",
+      "description": "Zabbix Monitoring Server",
+      "show_in_header": true,
+      "enabled": true
+    },
+    {
+      "id": "srv-6bb08b77",
+      "name": "Proxmox PDM",
+      "type": "proxmox",
+      "url": "https://10.11.0.231:8443",
+      "api_token": "",
+      "user": "root",
+      "password": "NetLensSecurePass2026!",
+      "description": "",
+      "show_in_header": false,
+      "enabled": true
+    },
+    {
+      "id": "srv-e6326226",
+      "name": "Zimbra ADM",
+      "type": "generic",
+      "url": "https://10.11.3.80:7071",
+      "api_token": "",
+      "user": "administrator",
+      "password": "@NetLensSecurePass2026!ZI",
+      "description": "",
+      "show_in_header": false,
+      "enabled": true
+    },
+    {
+      "id": "srv-0e7242fe",
+      "name": "Grafana",
+      "type": "generic",
+      "url": "http://192.168.10.108:3000",
+      "api_token": "",
+      "user": "administrator",
+      "password": "NetLensSecurePass2026!",
+      "description": "",
+      "show_in_header": false,
+      "enabled": true
+    },
+    {
+      "id": "srv-a5ee150a",
+      "name": "Proxmox Mail",
+      "type": "proxmox",
+      "url": "https://10.0.0.100:8006",
+      "api_token": "",
+      "user": "",
+      "password": "",
+      "description": "",
+      "show_in_header": false,
+      "enabled": true
+    },
+    {
+      "id": "srv-607bae4c",
+      "name": "Proxmox Quarantine",
+      "type": "proxmox",
+      "url": "https://10.0.0.100:8006/quarantine",
+      "api_token": "",
+      "user": "",
+      "password": "",
+      "description": "",
+      "show_in_header": false,
+      "enabled": true
+    },
+    {
+      "id": "srv-a2ca631b",
+      "name": "SOPHOS STR",
+      "type": "generic",
+      "url": "https://10.11.0.253:4444",
+      "api_token": "",
+      "user": "",
+      "password": "",
+      "description": "Servidor de Teste",
+      "show_in_header": false,
+      "enabled": true
+    },
+    {
+      "id": "srv-13e87801",
+      "name": "SOPHOS",
+      "type": "generic",
+      "url": "https://10.1.1.2:4444",
+      "api_token": "",
+      "user": "",
+      "password": "",
+      "description": "",
+      "show_in_header": false,
+      "enabled": true
+    }
+  ],
+  "port_events_settings": {
+    "flapping_warning_threshold": 3,
+    "flapping_critical_threshold": 6,
+    "default_window_hours": 24,
+    "stp_patterns": [
+      "Blocked by STP",
+      "BPDU Protection",
+      "BPDU",
+      "MSTP_BLOCKED",
+      "MSTP_DISCARDING",
+      "BLOCK_BPDUGUARD",
+      "loop-protect",
+      "err-disable"
+    ]
+  },
+  "bottlenecks_settings": {
+    "util_warning_threshold": 75.0,
+    "util_critical_threshold": 90.0,
+    "ignore_virtual_interfaces": true,
+    "min_speed_mbps": 100.0,
+    "error_detection_mode": "rate_and_delta",
+    "error_min_delta": 5,
+    "error_critical_rate": 10.0,
+    "discard_min_delta": 50
+  },
+  "firewalls": [
+    {
+      "id": "fw-matriz-sp",
+      "name": "Sophos Matriz SP (F1)",
+      "host": "10.1.1.2",
+      "port": "4444",
+      "city": "São Paulo",
+      "role": "Borda & Datacenter SP",
+      "location": "São Paulo - HQ",
+      "user": "netlens_api",
+      "password": "@NetLensSecurePass2026!",
+      "use_default_auth": true,
+      "enabled": true
+    },
+    {
+      "id": "fw-brasilia",
+      "name": "Sophos Brasília (F2)",
+      "host": "10.61.0.250",
+      "port": "5444",
+      "city": "Brasília",
+      "role": "Sucursal & Links Brasília",
+      "location": "Brasília - DF",
+      "user": "netlens_api",
+      "password": "@NetLensSecurePass2026!",
+      "use_default_auth": true,
+      "enabled": true
+    },
+    {
+      "id": "fw-str",
+      "name": "Sophos STR (F3)",
+      "host": "10.11.0.253",
+      "port": "4444",
+      "city": "São Paulo - STR",
+      "role": "Firewall Segmento STR",
+      "location": "São Paulo - STR",
+      "user": "netlens_api",
+      "password": "@NetLensSecurePass2026!",
+      "use_default_auth": true,
+      "enabled": true
+    }
+  ],
+  "wan_links": [
+    {
+      "id": "bsb_lan_vpn",
+      "appliance_host": "10.61.0.250",
+      "name": "Túnel VPN Matriz - Brasília (Port 1)",
+      "provider": "Rede Corporativa / VPN Brasília",
+      "interface_name": "Port1",
+      "target_ip": "10.61.0.250",
+      "fallback_probes": [],
+      "expected_speed": "1000 Mbps - Full Duplex",
+      "baseline_rtt_ms": 20.0,
+      "type": "INTER-SITE"
+    },
+    {
+      "id": "bsb_nwi",
+      "appliance_host": "10.61.0.250",
+      "name": "Link NWI Telecom (Port 2)",
+      "provider": "NWI Telecomunicações",
+      "interface_name": "Port2-BSB - NWI Telecom",
+      "target_ip": "10.61.0.250",
+      "fallback_probes": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "expected_speed": "1000 Mbps - Full Duplex",
+      "baseline_rtt_ms": 18.0,
+      "type": "WAN"
+    },
+    {
+      "id": "bsb_starlink",
+      "appliance_host": "10.61.0.250",
+      "name": "Link Starlink (Port 3)",
+      "provider": "SpaceX / Starlink",
+      "interface_name": "Port3_StarLink",
+      "target_ip": "10.61.0.250",
+      "fallback_probes": [
+        "8.8.4.4"
+      ],
+      "expected_speed": "1000 Mbps - Full Duplex",
+      "baseline_rtt_ms": 45.0,
+      "type": "WAN"
+    },
+    {
+      "id": "bsb_n1",
+      "appliance_host": "10.61.0.250",
+      "name": "Link N1 Internet (Port 4)",
+      "provider": "N1 Internet",
+      "interface_name": "Port4- N1-INTERNET",
+      "target_ip": "45.172.162.40",
+      "fallback_probes": [
+        "1.0.0.1"
+      ],
+      "expected_speed": "1000 Mbps - Full Duplex",
+      "baseline_rtt_ms": 25.0,
+      "type": "WAN"
+    },
+    {
+      "id": "link-1d98e1",
+      "appliance_host": "10.1.1.2",
+      "name": "Intelig 400 B / TIM (VLAN 573)",
+      "provider": "Operadora",
+      "interface_name": "Port8.573",
+      "target_ip": "186.231.35.145",
+      "fallback_probes": [],
+      "expected_speed": "1000 Mbps - Full Duplex",
+      "baseline_rtt_ms": 15.0,
+      "type": "WAN",
+      "source_ip": "10.11.2.233"
+    },
+    {
+      "id": "link-88015a",
+      "appliance_host": "10.1.1.2",
+      "name": "Intelig 400 C / TIM (VLAN 574)",
+      "provider": "Operadora",
+      "interface_name": "Port8.574",
+      "target_ip": "186.231.35.153",
+      "fallback_probes": [],
+      "expected_speed": "1000 Mbps - Full Duplex",
+      "baseline_rtt_ms": 15.0,
+      "type": "WAN",
+      "source_ip": "10.11.2.234"
+    },
+    {
+      "id": "link-7d66c4",
+      "appliance_host": "10.1.1.2",
+      "name": "Intelig 200 A / TIM (VLAN 573)",
+      "provider": "Operadora",
+      "interface_name": "Port8.577",
+      "target_ip": "186.231.35.137",
+      "fallback_probes": [],
+      "expected_speed": "1000 Mbps - Full Duplex",
+      "baseline_rtt_ms": 15.0,
+      "type": "WAN",
+      "source_ip": "10.11.2.232"
+    },
+    {
+      "id": "link-378f74",
+      "appliance_host": "10.1.1.2",
+      "name": "Link VIVO A 200 / VIVO (VLAN 151)",
+      "provider": "Operadora",
+      "interface_name": "Port7.151",
+      "target_ip": "201.91.250.105",
+      "fallback_probes": [],
+      "expected_speed": "1000 Mbps - Full Duplex",
+      "baseline_rtt_ms": 15.0,
+      "type": "WAN",
+      "source_ip": "10.11.2.230"
+    },
+    {
+      "id": "link-b17876",
+      "appliance_host": "10.1.1.2",
+      "name": "Link VIVO B 200 / VIVO (VLAN 151)",
+      "provider": "Operadora",
+      "interface_name": "Port7.152",
+      "target_ip": "189.108.202.57",
+      "fallback_probes": [],
+      "expected_speed": "1000 Mbps - Full Duplex",
+      "baseline_rtt_ms": 15.0,
+      "type": "WAN",
+      "source_ip": "10.11.2.231"
+    },
+    {
+      "id": "link-d42612",
+      "appliance_host": "10.1.1.2",
+      "name": "Link Algar 500 C / (VLAN 126)",
+      "provider": "Algar Telecom",
+      "interface_name": "",
+      "target_ip": "177.92.72.57",
+      "fallback_probes": [],
+      "expected_speed": "1000 Mbps - Full Duplex",
+      "baseline_rtt_ms": 15.0,
+      "type": "WAN",
+      "source_ip": "10.11.2.235"
+    },
+    {
+      "id": "link-534f5a",
+      "appliance_host": "10.1.1.2",
+      "name": "VPN Brasília (BSB_VPN_OCO_VIVO)",
+      "provider": "VPN Sophos IPsec",
+      "interface_name": "BSB_VPN_OCO_VIVO",
+      "target_ip": "10.61.0.250",
+      "source_ip": "",
+      "fallback_probes": [],
+      "expected_speed": "VPN IPsec Site-to-Site",
+      "baseline_rtt_ms": 30.0,
+      "type": "VPN"
+    }
+  ],
+  "speedtest_servers": []
+}

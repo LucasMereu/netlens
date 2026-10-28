@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetLens - Login</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/static/img/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0b0f19;
+            --bg-card: rgba(17, 24, 39, 0.45);
+            --border-card: rgba(255, 255, 255, 0.08);
+            --primary: #4f46e5;
+            --primary-hover: #4338ca;
+            --text-primary: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --success: #10b981;
+            --danger: #ef4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            background-image: 
+                radial-gradient(at 10% 20%, rgba(79, 70, 229, 0.15) 0px, transparent 50%),
+                radial-gradient(at 90% 80%, rgba(16, 185, 129, 0.1) 0px, transparent 50%);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-primary);
+            overflow: hidden;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 440px;
+            padding: 20px;
+        }
+
+        .login-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .logo-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .logo-header i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            filter: drop-shadow(0 0 10px rgba(79, 70, 229, 0.4));
+        }
+
+        .logo-header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            margin-bottom: 0.25rem;
+        }
+
+        .logo-header p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+
+        .input-wrapper {
+            position: relative;
+        }
+
+        .input-wrapper i {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 16px 12px 42px;
+            background: rgba(0, 0, 0, 0.2);
+            border: 1px solid var(--border-card);
+            border-radius: 8px;
+            color: var(--text-primary);
+            font-size: 0.95rem;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.25);
+        }
+
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: var(--primary);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn:hover {
+            background: var(--primary-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn:active {
+            transform: translateY(0);
+        }
+
+        .alert {
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .alert-danger {
+            background: rgba(239, 68, 68, 0.15);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            color: #fca5a5;
+        }
+
+        .alert-success {
+            background: rgba(16, 185, 129, 0.15);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            color: #a7f3d0;
+        }
+
+        .card-footer {
+            text-align: center;
+            margin-top: 1.5rem;
+        }
+
+        .card-footer a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: color 0.2s;
+            cursor: pointer;
+        }
+
+        .card-footer a:hover {
+            color: #818cf8;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <!-- 1. CARD DE LOGIN -->
+        <div id="login-card" class="login-card">
+            <div class="logo-header">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h1>NetLens</h1>
+                <p>Analisador de Infraestrutura de Rede</p>
+            </div>
+
+            {% if error %}
+            <div class="alert alert-danger">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span>{{ error }}</span>
+            </div>
+            {% endif %}
+            
+            <div id="login-alert" class="alert alert-danger hidden">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span id="login-alert-text"></span>
+            </div>
+
+            <form id="form-login" action="/login" method="POST">
+                <div class="form-group">
+                    <label for="username">Usuário</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="username" name="username" class="form-control" placeholder="Digite seu usuário" required autocomplete="username">
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1.75rem;">
+                    <label for="password">Senha</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" name="password" class="form-control" placeholder="Digite sua senha" required autocomplete="current-password">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn">
+                    <span>Entrar no Painel</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <div class="card-footer">
+                <a onclick="showRecovery()">Esqueceu a senha? Resgatar</a>
+            </div>
+        </div>
+
+        <!-- 2. CARD DE RECUPERAÇÃO -->
+        <div id="recovery-card" class="login-card hidden">
+            <div class="logo-header">
+                <i class="fa-solid fa-key" style="color: var(--success); filter: drop-shadow(0 0 10px rgba(16, 185, 129, 0.4));"></i>
+                <h1>Resgate de Senha</h1>
+                <p>Responda à pergunta de segurança</p>
+            </div>
+
+            <div id="recovery-alert" class="alert hidden">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <span id="recovery-alert-text"></span>
+            </div>
+
+            <div id="step-username">
+                <div class="form-group" style="margin-bottom: 1.5rem;">
+                    <label for="recovery-user">Confirme seu Usuário</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="recovery-user" class="form-control" placeholder="Ex: admin">
+                    </div>
+                </div>
+                <button type="button" class="btn" style="background: var(--success);" onclick="fetchQuestion()">
+                    <span>Obter Pergunta</span>
+                    <i class="fa-solid fa-question"></i>
+                </button>
+            </div>
+
+            <div id="step-question" class="hidden">
+                <div class="form-group">
+                    <label>Pergunta de Segurança</label>
+                    <div style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 8px; border: 1px solid var(--border-card); font-size: 0.9rem; font-weight: 500; color: #e5e7eb;" id="question-text">
+                        Carregando...
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="recovery-answer">Sua Resposta</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-comment-dots"></i>
+                        <input type="text" id="recovery-answer" class="form-control" placeholder="Resposta da pergunta" autocomplete="off">
+                    </div>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 1.75rem;">
+                    <label for="recovery-new-password">Nova Senha</label>
+                    <div class="input-wrapper">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="recovery-new-password" class="form-control" placeholder="Digite a nova senha">
+                    </div>
+                </div>
+
+                <button type="button" class="btn" style="background: var(--success);" onclick="submitRecovery()">
+                    <span>Redefinir Senha</span>
+                    <i class="fa-solid fa-circle-check"></i>
+                </button>
+            </div>
+
+            <div class="card-footer">
+                <a onclick="showLogin()"><i class="fa-solid fa-chevron-left" style="font-size: 0.75rem; margin-right: 4px;"></i> Voltar para o Login</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showRecovery() {
+            document.getElementById('login-card').classList.add('hidden');
+            document.getElementById('recovery-card').classList.remove('hidden');
+            document.getElementById('step-username').classList.remove('hidden');
+            document.getElementById('step-question').classList.add('hidden');
+            hideAlerts();
+        }
+
+        function showLogin() {
+            document.getElementById('recovery-card').classList.add('hidden');
+            document.getElementById('login-card').classList.remove('hidden');
+            hideAlerts();
+        }
+
+        function hideAlerts() {
+            document.getElementById('login-alert').classList.add('hidden');
+            document.getElementById('recovery-alert').classList.add('hidden');
+        }
+
+        function showAlert(id, text, type = 'danger') {
+            const el = document.getElementById(id);
+            const span = document.getElementById(id + '-text');
+            span.innerText = text;
+            el.className = 'alert ' + (type === 'danger' ? 'alert-danger' : 'alert-success');
+            el.classList.remove('hidden');
+        }
+
+        function fetchQuestion() {
+            const user = document.getElementById('recovery-user').value.trim();
+            if (!user) {
+                showAlert('recovery-alert', 'Por favor, digite o usuário.', 'danger');
+                return;
+            }
+            hideAlerts();
+            
+            fetch('/api/auth/recovery-question')
+                .then(r => r.json())
+                .then(data => {
+                    if (data.success) {
+                        document.getElementById('question-text').innerText = data.question;
+                        document.getElementById('step-username').classList.add('hidden');
+                        document.getElementById('step-question').classList.remove('hidden');
+                    } else {
+                        showAlert('recovery-alert', data.error || 'Erro ao obter pergunta.', 'danger');
+                    }
+                })
+                .catch(err => {
+                    showAlert('recovery-alert', 'Falha ao conectar ao servidor.', 'danger');
+                });
+        }
+
+        function submitRecovery() {
+            const answer = document.getElementById('recovery-answer').value.trim();
+            const newPassword = document.getElementById('recovery-new-password').value;
+            
+            if (!answer || !newPassword) {
+                showAlert('recovery-alert', 'Preencha a resposta e a nova senha.', 'danger');
+                return;
+            }
+            hideAlerts();
+
+            fetch('/api/auth/recover-password', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ answer: answer, new_password: newPassword })
+            })
+            .then(r => r.json())
+            .then(data => {
+                if (data.success) {
+                    showAlert('recovery-alert', 'Senha redefinida com sucesso! Redirecionando...', 'success');
+                    setTimeout(() => {
+                        showLogin();
+                    }, 2000);
+                } else {
+                    showAlert('recovery-alert', data.error || 'Falha na recuperação.', 'danger');
+                }
+            })
+            .catch(err => {
+                showAlert('recovery-alert', 'Erro ao conectar ao servidor.', 'danger');
+            });
+        }
+    </script>
+</body>
+</html>

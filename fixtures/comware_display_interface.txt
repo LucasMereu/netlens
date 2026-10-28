@@ -1,0 +1,6 @@
+interface GigabitEthernet1/0/1
+  undo shutdown
+interface GigabitEthernet1/0/2
+  undo shutdown
+interface GigabitEthernet1/0/48
+  undo shutdown

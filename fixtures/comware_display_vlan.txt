@@ -1,0 +1,6 @@
+VLAN ID   Type   Description
+1         Common  VLAN 0001
+10        Common  SERVERS
+20        Common  USERS
+1008      Common  RTV-APPLETV
+3999      Common  NETLENS-TEST

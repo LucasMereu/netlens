@@ -1,0 +1,6 @@
+interface TenGigabitEthernet 1/1
+  no shutdown
+interface TenGigabitEthernet 1/2
+  no shutdown
+interface TenGigabitEthernet 1/48
+  no shutdown

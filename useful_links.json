@@ -1,0 +1,135 @@
+[
+  {
+    "id": "link-netbox",
+    "name": "NetBox",
+    "url": "https://192.168.10.235/",
+    "category": "Infraestrutura",
+    "type": "netbox",
+    "description": "Gest\u00e3o de Ativos, DCIM e IPAM"
+  },
+  {
+    "id": "link-netdisco",
+    "name": "Netdisco",
+    "url": "http://192.168.10.51:5000",
+    "category": "Infraestrutura",
+    "type": "netdisco",
+    "description": "Descoberta de Topologia L2 e Vizinhos LLDP/CDP"
+  },
+  {
+    "id": "link-librenms",
+    "name": "LibreNMS",
+    "url": "http://192.168.10.50:8000/",
+    "category": "Monitoramento",
+    "type": "librenms",
+    "description": "Monitoramento SNMP, Portas e Syslog"
+  },
+  {
+    "id": "link-zabbix",
+    "name": "Zabbix",
+    "url": "http://192.168.10.108",
+    "category": "Monitoramento",
+    "type": "zabbix",
+    "description": "Servidor de M\u00e9tricas e Telemetria Zabbix"
+  },
+  {
+    "id": "link-grafana",
+    "name": "Grafana",
+    "url": "http://192.168.10.108:3000",
+    "category": "Monitoramento",
+    "type": "grafana",
+    "description": "Dashboards de Tr\u00e1fego e Gr\u00e1ficos em Tempo Real"
+  },
+  {
+    "id": "link-proxmox-pdm",
+    "name": "Proxmox PDM",
+    "url": "https://10.11.0.231:8443",
+    "category": "Virtualiza\u00e7\u00e3o",
+    "type": "proxmox",
+    "description": "Painel de Gerenciamento de Datacenter Proxmox"
+  },
+  {
+    "id": "link-proxmox-mail",
+    "name": "Proxmox Mail",
+    "url": "https://10.0.0.100:8006",
+    "category": "Comunica\u00e7\u00e3o & E-mail",
+    "type": "proxmox",
+    "description": "Proxmox Mail Gateway (Antispam & Filtro)"
+  },
+  {
+    "id": "link-proxmox-quarantine",
+    "name": "Proxmox Quarantine",
+    "url": "https://10.0.0.100:8006/quarantine",
+    "category": "Virtualiza\u00e7\u00e3o",
+    "type": "proxmox",
+    "description": "Interface de Quarentena de E-mails Proxmox"
+  },
+  {
+    "id": "link-zimbra-adm",
+    "name": "Zimbra ADM",
+    "url": "https://10.11.3.80:7071",
+    "category": "Comunica\u00e7\u00e3o & E-mail",
+    "type": "email",
+    "description": "Console de Administra\u00e7\u00e3o do Servidor Zimbra"
+  },
+  {
+    "id": "link-sophos-str",
+    "name": "SOPHOS STR",
+    "url": "https://10.11.0.253:4444",
+    "category": "Seguran\u00e7a & Firewall",
+    "type": "firewall",
+    "description": "Firewall SOPHOS STR (Gerenciamento)"
+  },
+  {
+    "id": "link-sophos",
+    "name": "SOPHOS",
+    "url": "https://10.1.1.2:4444",
+    "category": "Seguran\u00e7a & Firewall",
+    "type": "firewall",
+    "description": "Firewall SOPHOS Corporativo Principal"
+  },
+  {
+    "id": "link-81e2c323",
+    "name": "DNS1",
+    "url": "https://10.0.0.1:10000/",
+    "category": "DNS & Proxys",
+    "type": "generic",
+    "description": "",
+    "created_at": 1789559806
+  },
+  {
+    "id": "link-34fc28e3",
+    "name": "DNS2",
+    "url": "https://10.0.0.2:10000/",
+    "category": "DNS & Proxys",
+    "type": "generic",
+    "description": "",
+    "created_at": 1789560764,
+    "online": true,
+    "status": "online",
+    "latency_ms": 81.3
+  },
+  {
+    "id": "link-66a34f7d",
+    "name": "Proxy1",
+    "url": "http://10.0.0.10:9000/",
+    "category": "DNS & Proxys",
+    "type": "generic",
+    "description": "",
+    "created_at": 1789560898,
+    "online": true,
+    "status": "online",
+    "latency_ms": 23.1
+  },
+  {
+    "id": "link-3d524b73",
+    "name": "Proxy2",
+    "url": "http://10.0.0.11:9000/",
+    "category": "DNS & Proxys",
+    "type": "generic",
+    "description": "",
+    "created_at": 1789560913,
+    "online": true,
+    "status": "online",
+    "latency_ms": 8.1
+  }
+]

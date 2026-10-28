@@ -1,0 +1,27 @@
+# NetLens Environment & Secrets
+config.json
+*.bak
+*.lock
+*.log
+jobs.json
+audit_log.json
+provision_plans.json
+users.json
+.db/
+app/.db/
+
+# Python Virtual Environments & Bytecode
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# OS & Session files
+.DS_Store
+Thumbs.db
+cookies.txt
+backups/

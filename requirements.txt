@@ -1,0 +1,8 @@
+Flask==3.0.3
+requests==2.32.3
+networkx==3.3
+urllib3==2.2.2
+psycopg2-binary==2.9.12
+PyMySQL==1.2.0
+cryptography>=41.0.0
+pexpect>=4.9.0

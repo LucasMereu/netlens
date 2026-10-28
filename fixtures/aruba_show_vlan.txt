@@ -1,0 +1,7 @@
+ VLAN ID Name                             | Status     Voice Jumbo
+ ------- -------------------------------- + ---------- ----- -----
+ 1       DEFAULT_VLAN                     | Port-based No    No
+ 10      SERVERS                          | Port-based No    No
+ 20      USERS                            | Port-based No    No
+ 1008    RTV-APPLETV                      | Port-based No    No
+ 3999    NETLENS-TEST                     | Port-based No    No

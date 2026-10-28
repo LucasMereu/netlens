@@ -1,0 +1,6 @@
+NUM    Status    Description                     Q Ports
+1      Active                                    U Te 1/1
+10     Active    SERVERS                         T Te 1/2
+20     Active    USERS                           T Te 1/2
+1008   Active    RTV-APPLETV                     T Te 1/2
+3999   Active    NETLENS-TEST                    T Te 1/2

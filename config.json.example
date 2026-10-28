@@ -1,0 +1,23 @@
+{
+  "netdisco": {
+    "url": "http://10.11.4.51:5000",
+    "user": "admin",
+    "password": "SUA_SENHA_AQUI",
+    "api_token": ""
+  },
+  "librenms": {
+    "url": "http://10.11.4.50:8000",
+    "user": "rossi",
+    "password": "SUA_SENHA_AQUI",
+    "api_token": ""
+  },
+  "zabbix": {
+    "url": "http://10.11.3.108",
+    "user": "Admin",
+    "password": "SUA_SENHA_AQUI"
+  },
+  "settings": {
+    "verify_ssl": false,
+    "port": 5000
+  }
+}

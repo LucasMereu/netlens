@@ -1,0 +1,16 @@
+{
+  "operations": [
+    {
+      "type": "CREATE_VLAN",
+      "device_id": "switch01",
+      "vlan_id": 3999,
+      "name": "NETLENS-TEST"
+    },
+    {
+      "type": "SET_ACCESS_VLAN",
+      "device_id": "switch01",
+      "interface": "Gi1/0/48",
+      "vlan_id": 3999
+    }
+  ]
+}
